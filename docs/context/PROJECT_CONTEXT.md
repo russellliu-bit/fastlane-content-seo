@@ -41,12 +41,12 @@
 
 ### Apify Market Research 的角色
 
-`apify-market-research` 适合在已知主题后获取相关查询、品牌、产品和市场信号，例如从 `ai glasses` 扩展出购买、价格、定义、品牌和具体产品切口。它不是完整的无种子热点发现器。
+Apify Market Research 能力适合在已知主题后获取相关查询、品牌、产品和市场信号，例如从 `ai glasses` 扩展出购买、价格、定义、品牌和具体产品切口。它不是完整的无种子热点发现器。此前个人全局安装的同名 skill 缺少引用脚本，当前仓库不将它作为可复现依赖；后续应以完整实现或直接 API 集成恢复该能力。
 
 ### Skill 分工
 
 - 热点/种子发现：负责从当前市场信号产生候选 seed topics。
-- `apify-market-research`：验证并扩展已知 seed topic。
+- Apify Market Research 能力：验证并扩展已知 seed topic；当前仍待补齐可复现实现。
 - `keyword-research`：处理关键词、意图、难度、搜索量和优先级。
 - `programmatic-seo`：只在未来需要模板化批量页面或规模化内容时使用，不应替代选题判断。
 

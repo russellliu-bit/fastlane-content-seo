@@ -8,6 +8,20 @@
       "skillPath": "skills/engineering/code-review/SKILL.md",
       "computedHash": "4a17d9d3e0fc87ae48544d371a820fac5a4a78f4c05e7e6b3229094fbf8a7e26"
     },
+    "competitor-analysis": {
+      "source": "aaron-he-zhu/seo-geo-claude-skills",
+      "ref": "v9.9.12",
+      "sourceType": "github",
+      "skillPath": "research/competitor-analysis/SKILL.md",
+      "computedHash": "8483a92bf0057724535fef04f1a4213fedc1afd72a9abffbcf1db8ce2809e589"
+    },
+    "content-gap-analysis": {
+      "source": "aaron-he-zhu/seo-geo-claude-skills",
+      "ref": "v9.9.12",
+      "sourceType": "github",
+      "skillPath": "research/content-gap-analysis/SKILL.md",
+      "computedHash": "f271b5d5d087c01aa4a6e59cdfc0a020699035b91cc277bb9dde361db5d487e2"
+    },
     "diagnosing-bugs": {
       "source": "mattpocock/skills",
       "ref": "v1.1.0",
@@ -43,12 +57,33 @@
       "skillPath": "skills/productivity/grilling/SKILL.md",
       "computedHash": "1de9e777a60b184b29412fadacb7bbde8c14bb7037e5c4d9d086c941281d1742"
     },
+    "handoff": {
+      "source": "mattpocock/skills",
+      "ref": "v1.1.0",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/handoff/SKILL.md",
+      "computedHash": "87e353708ab36062eac54ddb593a97ca553c0cb4bfa1ed1fdaf68520700723f1"
+    },
     "implement": {
       "source": "mattpocock/skills",
       "ref": "v1.1.0",
       "sourceType": "github",
       "skillPath": "skills/engineering/implement/SKILL.md",
       "computedHash": "0d51255cab5cf937b8fe41252f00213706e0175ca9607fc00409d29562b5b839"
+    },
+    "keyword-research": {
+      "source": "aaron-he-zhu/seo-geo-claude-skills",
+      "ref": "v9.9.12",
+      "sourceType": "github",
+      "skillPath": "research/keyword-research/SKILL.md",
+      "computedHash": "5cdd2b302a2bd1bea57fe3c5f7edf65279405a3986e22e97d8389365b21fb351"
+    },
+    "prototype": {
+      "source": "mattpocock/skills",
+      "ref": "v1.1.0",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/prototype/SKILL.md",
+      "computedHash": "e70c8933d30153a4da47865829d356824b2a830367275e3b00c7b431a1544a79"
     },
     "research": {
       "source": "mattpocock/skills",
@@ -63,6 +98,13 @@
       "sourceType": "github",
       "skillPath": "skills/engineering/tdd/SKILL.md",
       "computedHash": "c9326b88419cfba1d54dd713b7ddb23020e6a93f4b0d13aea58cebba58cda2ee"
+    },
+    "technical-seo-checker": {
+      "source": "aaron-he-zhu/seo-geo-claude-skills",
+      "ref": "v9.9.12",
+      "sourceType": "github",
+      "skillPath": "optimize/technical-seo-checker/SKILL.md",
+      "computedHash": "6b43e51a7b69d00ee7b50c6623b4f469a58d006b037061f584a41964dce9da86"
     },
     "to-spec": {
       "source": "mattpocock/skills",
@@ -84,6 +126,13 @@
       "sourceType": "github",
       "skillPath": "skills/engineering/triage/SKILL.md",
       "computedHash": "b77ea99c2e6e97815b373cc476ad4cc1835d3e736867b764602147be71f6c131"
+    },
+    "wayfinder": {
+      "source": "mattpocock/skills",
+      "ref": "v1.1.0",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/wayfinder/SKILL.md",
+      "computedHash": "3eb72cd9abdfaa00e10fa69f0b4410ff8639a6cf4eb9e5d187b289c3aa9be2fc"
     }
   }
 }

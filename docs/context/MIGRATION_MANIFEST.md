@@ -63,4 +63,8 @@ Ai_colab/*.md            -> 新 docs/context/source/
 - 参考 `fstln-dev/dtcplus-service-ts`，采用短 `AGENTS.md` 加 `docs/agents/` 的规则分层。
 - 精选 Matt skills 以仓库级依赖安装在 `.agents/skills/`，固定为 `mattpocock/skills` 的 `v1.1.0`，并通过 `skills-lock.json` 记录来源和内容哈希。
 - `.claude/skills/` 只保留指向 `.agents/skills/` 的软链接，避免重复副本。
+- 补充 `wayfinder`、`prototype`、`handoff`，用于大型探索、风险验证和跨会话交接。
+- 补充固定自 `aaron-he-zhu/seo-geo-claude-skills@v9.9.12` 的 `keyword-research`、`competitor-analysis`、`content-gap-analysis` 和 `technical-seo-checker`。
+- 未纳入缺少引用脚本的全局 `apify-market-research` 副本；`programmatic-seo` 延后到真正需要批量模板页面时再引入。
+- 个人级 `~/.agents/skills` 与非系统 `~/.codex/skills` 已移出全局加载路径并放入本机废纸篓备份；Codex 系统 skills 与插件运行时不受影响。
 - `CONTEXT.md` 与 `docs/adr/` 在首个术语或符合门槛的决定确认后再创建，不提前固化当前待决策事项。

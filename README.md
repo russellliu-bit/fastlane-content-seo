@@ -26,7 +26,7 @@ Fastlane 面向科技与消费品牌的博客选题、SEO 研究和内容生产�
 - `config/workflow.sample.json`：示例工作流配置。
 - `tests/`：现有离线测试与 fixtures。
 - `brand_official_websites.csv`：品牌官网基础注册表。
-- `.agents/skills/`：项目固定版本的 Agent 工作流能力。
+- `.agents/skills/`：项目固定版本的探索、交付与 SEO 专用 Agent 能力。
 - `skills-lock.json`：Agent skills 的来源与版本锁。
 - `scripts/legacy/`：仅本地保留的旧 Shopify 手工脚本，不纳入 Git 仓库。
 

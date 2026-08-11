@@ -11,3 +11,15 @@ Matt skills 使用五个统一的 triage 角色；本项目直接使用同名 Gi
 | `wontfix` | `wontfix` | 确认不处理 |
 
 当 skill 提及某个 triage 角色时，使用表中对应的 GitHub 标签。修改标签名称时必须同步更新本文件。
+
+## Wayfinder labels
+
+| GitHub label | 用途 |
+| --- | --- |
+| `wayfinder:map` | 一项大型探索工作的父地图 |
+| `wayfinder:research` | 需要收集事实和证据的节点 |
+| `wayfinder:prototype` | 需要最小实验验证假设的节点 |
+| `wayfinder:grilling` | 需要通过访谈澄清决策的节点 |
+| `wayfinder:task` | 已明确、可直接执行的节点 |
+
+这些标签只描述探索地图中的节点类型，不替代 triage 状态标签。
