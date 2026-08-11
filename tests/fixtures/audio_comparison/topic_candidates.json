@@ -1,0 +1,191 @@
+[
+  {
+    "topic_key": "best-wireless-headphones-2026",
+    "category": "Audio",
+    "intent_type": "comparison",
+    "article_type": "comparison_roundup",
+    "keyword": "best wireless headphones 2026",
+    "title_hypotheses": [
+      "Best Audio Picks for March 2026"
+    ],
+    "signal_summary": "Search and community signals suggest strong buying-guide intent for premium wireless headphones.",
+    "signal_scores": {
+      "search_discovery_score": 0.9,
+      "trend_score": 0.7,
+      "reddit_validation_score": 0.6,
+      "origin_evidence_score": 0.8,
+      "content_fit_score": 0.9
+    },
+    "candidate_products": [
+      {
+        "normalized_name": "sony wh-1000xm5",
+        "display_name": "Sony WH-1000XM5",
+        "brand": "Sony",
+        "category": "Audio",
+        "source_urls": [
+          "https://toproductsreviews.com/audio",
+          "https://www.bestproductsreviews.com/headphones"
+        ],
+        "origin_urls": [
+          "https://www.sony.com/wh1000xm5"
+        ],
+        "specs": {
+          "port": "USB-C",
+          "type": "Wireless",
+          "connectivity": "Bluetooth"
+        },
+        "positioning": "Sony WH-1000XM5 stands out for evidence-backed battery life and ANC performance.",
+        "pros_evidence": [
+          "Battery life is highly rated in source coverage.",
+          "Noise cancellation is explicitly mentioned as a standout feature."
+        ],
+        "cons_evidence": [
+          "Pricing may sit at the premium end of the category.",
+          "Availability may vary by region and channel."
+        ],
+        "best_for_signals": [
+          "buyers who want strong ANC"
+        ],
+        "confidence_score": 0.85,
+        "dedupe_key": "sony-wh-1000xm5",
+        "brand_origin_url": "https://www.sony.com/wh1000xm5",
+        "evidence_bindings": [
+          {
+            "evidence_id": "sony-wh-1000xm5-pro-1",
+            "type": "pro",
+            "text": "Battery life is highly rated in source coverage."
+          }
+        ],
+        "eligibility_status": "ready",
+        "source_confidence": 0.85
+      },
+      {
+        "normalized_name": "bose quietcomfort ultra",
+        "display_name": "Bose QuietComfort Ultra",
+        "brand": "Bose",
+        "category": "Audio",
+        "source_urls": [
+          "https://toproductsreviews.com/audio",
+          "https://www.bestproductsreviews.com/headphones"
+        ],
+        "origin_urls": [
+          "https://www.bose.com/quietcomfort-ultra"
+        ],
+        "specs": {
+          "port": "USB-C",
+          "type": "Wireless",
+          "connectivity": "Bluetooth"
+        },
+        "positioning": "Bose QuietComfort Ultra remains a top pick for isolation and comfort.",
+        "pros_evidence": [
+          "Noise cancellation is among the best in category."
+        ],
+        "cons_evidence": [
+          "Positioned as a high-price premium option."
+        ],
+        "best_for_signals": [
+          "travelers and commuters seeking maximum noise isolation"
+        ],
+        "confidence_score": 0.81,
+        "dedupe_key": "bose-qc-ultra",
+        "brand_origin_url": "https://www.bose.com/quietcomfort-ultra",
+        "evidence_bindings": [
+          {
+            "evidence_id": "bose-qc-ultra-pro-1",
+            "type": "pro",
+            "text": "Noise cancellation is among the best in category."
+          }
+        ],
+        "eligibility_status": "ready",
+        "source_confidence": 0.81
+      },
+      {
+        "normalized_name": "sennheiser momentum",
+        "display_name": "Sennheiser Momentum",
+        "brand": "Sennheiser",
+        "category": "Audio",
+        "source_urls": [
+          "https://toproductsreviews.com/audio"
+        ],
+        "origin_urls": [
+          "https://www.sennheiser-hearing.com/momentum"
+        ],
+        "specs": {
+          "port": "USB-C",
+          "type": "Wireless"
+        },
+        "positioning": "Sennheiser Momentum offers strong audio quality and battery stamina.",
+        "pros_evidence": [
+          "Strong battery life discussed in source coverage."
+        ],
+        "cons_evidence": [
+          "Price may be higher than entry-level wireless options."
+        ],
+        "best_for_signals": [
+          "users prioritizing sound quality"
+        ],
+        "confidence_score": 0.76,
+        "dedupe_key": "sennheiser-momentum",
+        "brand_origin_url": "https://www.sennheiser-hearing.com/momentum",
+        "evidence_bindings": [
+          {
+            "evidence_id": "sennheiser-momentum-pro-1",
+            "type": "pro",
+            "text": "Strong battery life discussed in source coverage."
+          }
+        ],
+        "eligibility_status": "ready",
+        "source_confidence": 0.76
+      },
+      {
+        "normalized_name": "apple airpods max",
+        "display_name": "Apple AirPods Max",
+        "brand": "Apple",
+        "category": "Audio",
+        "source_urls": [
+          "https://www.bestproductsreviews.com/headphones"
+        ],
+        "origin_urls": [
+          "https://www.apple.com/airpods-max/"
+        ],
+        "specs": {
+          "connectivity": "Bluetooth",
+          "type": "Wireless"
+        },
+        "positioning": "Apple AirPods Max is relevant for buyers deep in the Apple ecosystem.",
+        "pros_evidence": [
+          "Noise cancellation is explicitly praised in reviews."
+        ],
+        "cons_evidence": [
+          "Pricing is consistently at the premium end of the market."
+        ],
+        "best_for_signals": [
+          "apple users seeking ecosystem integration"
+        ],
+        "confidence_score": 0.72,
+        "dedupe_key": "apple-airpods-max",
+        "brand_origin_url": "https://www.apple.com/airpods-max/",
+        "evidence_bindings": [
+          {
+            "evidence_id": "apple-airpods-max-pro-1",
+            "type": "pro",
+            "text": "Noise cancellation is explicitly praised in reviews."
+          }
+        ],
+        "eligibility_status": "ready",
+        "source_confidence": 0.72
+      }
+    ],
+    "source_urls": [
+      "https://toproductsreviews.com/audio",
+      "https://www.bestproductsreviews.com/headphones",
+      "https://www.sony.com/wh1000xm5",
+      "https://www.bose.com/quietcomfort-ultra"
+    ],
+    "brand_origin_coverage": 1.0,
+    "draftability_score": 0.81,
+    "risk_flags": [],
+    "status": "ready",
+    "rationale": "The topic has comparison intent, strong search coverage, and enough origin-backed products for a roundup."
+  }
+]

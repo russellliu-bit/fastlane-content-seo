@@ -1,0 +1,8 @@
+[project]
+name = "fastlane-content-seo"
+version = "0.1.0"
+description = "Multi-brand SEO research and content workflow for Fastlane."
+requires-python = ">=3.9"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

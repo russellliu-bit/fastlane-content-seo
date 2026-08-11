@@ -1,0 +1,39 @@
+{
+  "artifact_root": "artifacts",
+  "state_db_path": "artifacts/state.db",
+  "source_catalog": "codex_knowledge_base/14_external_sources_catalog.csv",
+  "allowed_domains": [
+    "toproductsreviews.com",
+    "www.bestproductsreviews.com",
+    "www.bestchoice.com"
+  ],
+  "category": "Audio",
+  "article_type": "comparison_roundup",
+  "raw_keyword": "",
+  "seed_query_count": 5,
+  "apify_sync_timeout_seconds": 120,
+  "apify_poll_interval_seconds": 5,
+  "apify_require_success_for_seed": true,
+  "affiliate_mode": "placeholder",
+  "author": "Heyup Editorial",
+  "publish_mode": "stub",
+  "llm_mode": "live",
+  "llm_provider": "gemini",
+  "llm_base_url": "https://generativelanguage.googleapis.com/v1beta",
+  "llm_model": "gemini-2.5-flash",
+  "llm_api_key_env": "GEMINI_API_KEY",
+  "llm_timeout_seconds": 60,
+  "discovery_enabled": true,
+  "auto_select_topic": true,
+  "trend_geo": "US",
+  "max_topics": 10,
+  "topic_quality_threshold": 0.65,
+  "discovery_frequency_hours": 24,
+  "topic_seed_queries": [
+    "best wireless headphones 2026",
+    "how to choose noise cancelling headphones",
+    "best earbuds for commuting 2026"
+  ],
+  "max_products": 5,
+  "min_products": 3
+}

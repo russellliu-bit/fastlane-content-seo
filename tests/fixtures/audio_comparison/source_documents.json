@@ -1,0 +1,33 @@
+[
+  {
+    "url": "https://toproductsreviews.com/audio",
+    "domain": "toproductsreviews.com",
+    "title": "Top Audio Picks",
+    "published_at": "2026-03-11T00:00:00+00:00",
+    "content_type": "text/html",
+    "raw_text": "Sony WH-1000XM5 offers wireless listening, strong battery life, and active noise cancellation. Bose QuietComfort Ultra is a premium wireless option with noise cancellation and broad availability notes. Sennheiser Momentum 4 Wireless delivers battery life and USB-C charging. Premium pricing and availability vary by region.",
+    "outbound_links": [],
+    "evidence_snippets": [
+      "Sony WH-1000XM5 offers wireless listening, strong battery life, and active noise cancellation.",
+      "Bose QuietComfort Ultra is a premium wireless option with noise cancellation and broad availability notes.",
+      "Sennheiser Momentum 4 Wireless delivers battery life and USB-C charging.",
+      "Premium pricing and availability vary by region."
+    ],
+    "fetch_status": "success"
+  },
+  {
+    "url": "https://www.bestproductsreviews.com/headphones",
+    "domain": "www.bestproductsreviews.com",
+    "title": "Best Headphones",
+    "published_at": "2026-03-11T00:00:00+00:00",
+    "content_type": "text/html",
+    "raw_text": "Sony WH-1000XM5 appears again with Bluetooth and wireless support. Apple AirPods Max remains a premium option with availability caveats. Bose QuietComfort Ultra is listed as a wireless noise canceling choice.",
+    "outbound_links": [],
+    "evidence_snippets": [
+      "Sony WH-1000XM5 appears again with Bluetooth and wireless support.",
+      "Apple AirPods Max remains a premium option with availability caveats.",
+      "Bose QuietComfort Ultra is listed as a wireless noise canceling choice."
+    ],
+    "fetch_status": "success"
+  }
+]

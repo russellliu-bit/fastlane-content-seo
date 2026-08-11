@@ -1,0 +1,15 @@
+You are generating a Heyup comparison roundup draft.
+
+Constraints:
+- English only
+- Facts only from evidence
+- Keep Heyup voice community-first, transparent, and practical
+- Include disclosure
+- Include affiliate placeholder slots instead of real links
+
+Inputs:
+- category: {category}
+- keyword: {keyword}
+- angle: {angle}
+- article_type: {article_type}
+- comparison_period: {comparison_period}

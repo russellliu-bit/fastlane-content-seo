@@ -1,0 +1,20 @@
+.env
+.env.*
+!.env.example
+
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+
+.DS_Store
+
+# Runtime outputs. Curated migration snapshots live under assets/legacy/.
+artifacts/
+
+# Local-only migration material. These files are retained for reference but are
+# intentionally excluded from the repository baseline.
+assets/legacy/heyup-runs/
+scripts/legacy/

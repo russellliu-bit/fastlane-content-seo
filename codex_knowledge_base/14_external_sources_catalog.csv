@@ -1,0 +1,10 @@
+group,title,url,why_it_matters,recommended_filename
+Reference samples,TOProductsReviews homepage,https://toproductsreviews.com/,IA benchmark for categories/blog/deals commerce-content structure,source_ref_toproductsreviews_homepage.md
+Reference samples,BestProductsReviews homepage,https://www.bestproductsreviews.com/,"Benchmark for comparison-first affiliate positioning, ranking explanation, and disclosure placement",source_ref_bestproductsreviews_homepage.md
+Reference samples,BestChoice laptop comparison page,https://www.bestchoice.com/comparison/laptop,Benchmark for refreshable month-based comparison landing pages,source_ref_bestchoice_laptop_comparison.md
+Compliance,Amazon Associates disclosure guidance,https://affiliate-program.amazon.com/help/node/topic/GPXFHVYZMTGPUMPE,Required disclosure and Amazon-specific affiliate constraints,source_policy_amazon_associates_disclosure.md
+Compliance,FTC endorsement guides FAQ,https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking,General endorsement/review disclosure baseline,source_policy_ftc_endorsement_guides.md
+Google Search,Google: Write high quality reviews,https://developers.google.com/search/docs/specialty/ecommerce/write-high-quality-reviews,Content quality requirements for review and comparison workflows,source_google_write_high_quality_reviews.md
+Google Search,Google: Product structured data,https://developers.google.com/search/docs/appearance/structured-data/product,Markup guidance for editorial product pages vs purchase pages,source_google_product_structured_data.md
+Google Search,Google: Review snippet structured data,https://developers.google.com/search/docs/appearance/structured-data/review-snippet,Guidance for review/rating related rich results,source_google_review_snippet_structured_data.md
+Google Search,Google: Qualify outbound links,https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links,Affiliate/outbound link attribute guidance such as rel sponsored,source_google_qualify_outbound_links.md
