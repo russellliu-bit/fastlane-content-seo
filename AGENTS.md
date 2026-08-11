@@ -1,30 +1,26 @@
-# AGENTS.md
+# Fastlane Content SEO Agent Instructions
 
-## 工作原则
+## 沟通
 
-- 使用中文沟通；以仓库中的文档、代码和可复现结果作为事实依据。
-- 开始任务前阅读 `docs/context/PROJECT_CONTEXT.md`；涉及迁移边界或历史资产时，同时阅读 `docs/context/MIGRATION_MANIFEST.md`。
-- 涉及 Heyup 的业务、品牌或内容判断时，按需从 `codex_knowledge_base/00_index.md` 进入知识库。
-- 重要的范围、架构或兼容性结论应写入 `docs/context/`，不要只留在对话记录中。
+- 永远使用中文沟通。
 
-## 产品边界
+## 项目上下文
 
-- 本项目产出博客选题、SEO 研究、内容 brief、正文，以及 Shopify 博客所需的内容字段。
-- 不执行 Shopify 发布、后台写入、发布状态管理或店铺运维。
-- 品牌结论必须标识为已验证事实、外部来源事实或待验证假设。
-- 热点、趋势和搜索需求属于时效信息，使用前必须重新获取并记录来源与时间。
+- 开始工作前阅读 `docs/context/PROJECT_CONTEXT.md`。
+- 涉及迁移边界或历史资产时，同时阅读 `docs/context/MIGRATION_MANIFEST.md`。
+- 涉及 Heyup 业务、品牌或内容判断时，从 `codex_knowledge_base/00_index.md` 按需进入知识库。
 
-## 代码与兼容性
+## Agent skills
 
-- `heyup_buying_guides/` 是迁移兼容包；重构包名、模块边界或旧发布代码前，先通过现有测试并记录兼容策略。
-- 新功能优先采用可复用的多品牌领域模型，不把 Heyup 专属字段当作公司级标准。
-- 结构化输出应保留品牌、市场、关键词、意图、证据、来源与新鲜度信息。
-- 修改后运行与改动相称的测试；至少执行受影响的离线测试。
+- 项目级 skills 位于 `.agents/skills/`，使用方式见 `docs/agents/skills.md`。
+- Issue 与规格使用 GitHub Issues，操作约定见 `docs/agents/issue-tracker.md`。
+- Triage 标签使用项目统一词汇，见 `docs/agents/triage-labels.md`。
+- 领域术语和 ADR 的读取、维护规则见 `docs/agents/domain.md`。
 
-## 资产、隐私与 Git
+## 项目边界与安全
 
-- 新运行产物只能写入被忽略的 `artifacts/`。
-- `assets/legacy/heyup-runs/` 与 `scripts/legacy/` 是仅本地保留的迁移资料，默认只读且不得提交。
-- 不提交 `.env`、Token、Cookie、密钥、运行数据库、缓存或个人凭据；使用 `.env.example` 提供占位配置。
-- 不删除或覆盖历史资产，除非用户明确授权。
-- 提交前检查 `git status --short` 与暂存区 diff，确认没有误纳入本地资料或敏感信息。
+- 项目负责博客选题、SEO 研究、内容及 Shopify 博客所需内容字段；不执行 Shopify 发布、后台写入或店铺运维。
+- 品牌结论必须区分已验证事实、外部来源事实和待验证假设；热点与搜索需求使用前必须重新获取当前数据。
+- `assets/legacy/heyup-runs/`、`scripts/legacy/` 和 `artifacts/` 仅在本地保留，不得提交。
+- 不提交 `.env`、Token、Cookie、密钥、运行数据库、缓存或个人凭据。
+- 重构 `heyup_buying_guides/` 前先通过现有测试，并记录兼容策略。

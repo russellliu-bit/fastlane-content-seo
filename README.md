@@ -17,7 +17,8 @@ Fastlane 面向科技与消费品牌的博客选题、SEO 研究和内容生产�
 2. `docs/context/MIGRATION_MANIFEST.md`：旧项目来源、迁移内容与排除项。
 3. `codex_knowledge_base/00_index.md`：Heyup 原始业务与内容知识库。
 4. `docs/context/source/`：Fastlane AI 共创项目原始申报资料。
-5. 本地可选的 `assets/legacy/heyup-runs/`：迁移前已生成的选题、brief、文章和研究运行资产。该目录仅在迁移机器保留，不纳入 Git 仓库。
+5. `docs/agents/`：Agent skills、Issue tracker、triage 标签及领域文档维护规则。
+6. 本地可选的 `assets/legacy/heyup-runs/`：迁移前已生成的选题、brief、文章和研究运行资产。该目录仅在迁移机器保留，不纳入 Git 仓库。
 
 ## 现有基建
 
@@ -25,6 +26,8 @@ Fastlane 面向科技与消费品牌的博客选题、SEO 研究和内容生产�
 - `config/workflow.sample.json`：示例工作流配置。
 - `tests/`：现有离线测试与 fixtures。
 - `brand_official_websites.csv`：品牌官网基础注册表。
+- `.agents/skills/`：项目固定版本的 Agent 工作流能力。
+- `skills-lock.json`：Agent skills 的来源与版本锁。
 - `scripts/legacy/`：仅本地保留的旧 Shopify 手工脚本，不纳入 Git 仓库。
 
 ## 本地运行

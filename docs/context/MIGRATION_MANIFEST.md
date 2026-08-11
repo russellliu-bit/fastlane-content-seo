@@ -57,3 +57,10 @@ Ai_colab/*.md            -> 新 docs/context/source/
 - 新仓库只包含可运行代码、测试、示例配置、项目文档、品牌注册表和 Heyup 知识库。
 - `assets/legacy/heyup-runs/` 与 `scripts/legacy/` 作为本地迁移资料保留并由 `.gitignore` 排除。
 - 根目录的旧 Shopify 手工脚本已归档至 `scripts/legacy/create_blog_副本.py`；它不属于项目运行范围，也不会被提交。
+
+## Agent 工作区整理（2026-08-11）
+
+- 参考 `fstln-dev/dtcplus-service-ts`，采用短 `AGENTS.md` 加 `docs/agents/` 的规则分层。
+- 精选 Matt skills 以仓库级依赖安装在 `.agents/skills/`，固定为 `mattpocock/skills` 的 `v1.1.0`，并通过 `skills-lock.json` 记录来源和内容哈希。
+- `.claude/skills/` 只保留指向 `.agents/skills/` 的软链接，避免重复副本。
+- `CONTEXT.md` 与 `docs/adr/` 在首个术语或符合门槛的决定确认后再创建，不提前固化当前待决策事项。
