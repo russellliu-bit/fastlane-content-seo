@@ -28,6 +28,10 @@ _Avoid_: Mini Marketing Listening、第二套 Listening 系统
 DTC 项目自身产品评论和客服工单中表达的用户问题、评价、需求与使用情境；当前源数据按项目维度存放在 BigQuery，不能与外部社区讨论混为一类。
 _Avoid_: 博客评论、Reddit VOC、社媒声量
 
+**第一方 VOC Observation（First-party VOC Observation）**：
+从一条产品评论或一条客户客服消息形成、已确认项目归属并完成去标识的单条第一方反馈证据；它保留来源版本引用，但不是可直接公开引用的客户原文。
+_Avoid_: 客户原声、VOC 原始行、客服工单
+
 **信号（Signal）**：
 带有来源、观测时间、市场和证据引用的标准化事实记录；它可以提示需求或变化，但本身不是选题或行动结论。
 _Avoid_: 选题、趋势结论、Opportunity
