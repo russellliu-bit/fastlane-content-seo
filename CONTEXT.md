@@ -28,13 +28,29 @@ _Avoid_: Mini Marketing Listening、第二套 Listening 系统
 DTC 项目自身产品评论和客服工单中表达的用户问题、评价、需求与使用情境；当前源数据按项目维度存放在 BigQuery，不能与外部社区讨论混为一类。
 _Avoid_: 博客评论、Reddit VOC、社媒声量
 
+**来源观测（Source Observation）**：
+对一个来源事实、记录或指标窗口的版本化捕获，是 Signal 的可追溯输入；它保留来源语义，但本身不表示选题或行动结论。
+_Avoid_: Raw Signal、Topic、Opportunity
+
 **第一方 VOC Observation（First-party VOC Observation）**：
 从一条产品评论或一条客户客服消息形成、已确认项目归属并完成去标识的单条第一方反馈证据；它保留来源版本引用，但不是可直接公开引用的客户原文。
 _Avoid_: 客户原声、VOC 原始行、客服工单
 
 **信号（Signal）**：
-带有来源、观测时间、市场和证据引用的标准化事实记录；它可以提示需求或变化，但本身不是选题或行动结论。
-_Avoid_: 选题、趋势结论、Opportunity
+由一个或多个来源观测支持、只表达单个主题下一项事实主张的原子记录；它保留原生指标和推导版本，但不包含跨来源统一强度分，也不是选题或行动结论。
+_Avoid_: Discovery Score、选题、趋势结论、Opportunity
+
+**Signal Cluster**：
+一次聚类运行在同一项目、运行模式、市场、语言、主题和分析窗口内形成的版本化 Signal 成员快照；它表达相关性，但不表示已形成 SEO Opportunity。
+_Avoid_: Topic Cluster、合并 Signal、Opportunity
+
+**证据引用（Evidence Reference）**：
+Signal 对具体来源观测 revision、安全摘要或原生指标的中立引用；支持、反向或背景角色属于特定 Cluster membership，而不是证据自身。
+_Avoid_: 来源 URL、Evidence Score、事实结论
+
+**证据家族（Evidence Family）**：
+已确认来自同一底层内容或事件的一组来源记录；各来源血缘分别保留，但计算独立佐证数量时只视为一份证据。
+_Avoid_: Source Count、多源共识
 
 **SEO Opportunity**：
 由一个或多个信号及站内覆盖情况支持、值得评估采取 SEO 行动的结构化机会；它必须保留证据、准入结果、评分版本和推荐行动，而不等同于新文章选题。
