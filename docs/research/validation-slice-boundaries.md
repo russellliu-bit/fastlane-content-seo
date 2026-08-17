@@ -64,7 +64,8 @@ Fastlane 仓库中用户提及的 `day` 项目是后续设计小型信号采集�
 - Create；
 - Update 或 Expand；
 - Link；
-- Monitor 或 Reject。
+- Monitor；
+- 被拒绝或证据不足的 Opportunity Assessment。
 
 Merge 和 Reposition 只在真实证据支持时纳入，不为覆盖动作而人为制造样本。
 

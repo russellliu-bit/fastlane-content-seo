@@ -52,9 +52,29 @@ _Avoid_: 来源 URL、Evidence Score、事实结论
 已确认来自同一底层内容或事件的一组来源记录；各来源血缘分别保留，但计算独立佐证数量时只视为一份证据。
 _Avoid_: Source Count、多源共识
 
+**Opportunity Assessment**：
+对一个 Signal Cluster 结合站内覆盖、项目边界和证据完整性进行的版本化候选评估；它保存准入门槛、缺失数据、反向证据、评分输入和评估结果。`rejected` 与 `insufficient_evidence` 是 Assessment 结果，不生成 SEO Opportunity。
+_Avoid_: SEO Opportunity、Reject 动作、候选选题
+
+**Opportunity 证据配方（Opportunity Evidence Recipe）**：
+某类 Opportunity Assessment 通过准入所需的证据角色、站内检查和反证处理规则；它按判断类型配置，不要求每个候选同时具备所有来源，也不以表面来源数量代替独立证据质量。来源未接通、来源就绪但无结果、来源不适用是三个不同状态。
+_Avoid_: 固定来源清单、最低来源数、缺失数据统一扣分
+
 **SEO Opportunity**：
-由一个或多个信号及站内覆盖情况支持、值得评估采取 SEO 行动的结构化机会；它必须保留证据、准入结果、评分版本和推荐行动，而不等同于新文章选题。
-_Avoid_: Topic Candidate、自动选题、内容 Idea
+由通过 Opportunity Assessment 准入的候选形成、值得采取或规划 SEO 行动的结构化机会；它必须保留评估版本、证据、评分版本和推荐行动，而不等同于新文章选题。`Monitor` 可以是有效行动，`Reject` 不是行动。
+_Avoid_: Topic Candidate、自动选题、内容 Idea、被拒绝的 Opportunity
+
+**Opportunity Priority Score**：
+对已经通过准入的 SEO Opportunity 进行 backlog 排序的版本化多维分数；它表达相对投入优先级，不表达判断为真的概率，也不能用高价值抵消阻断性风险。
+_Avoid_: Opportunity Confidence、成功概率、统一 Signal 强度分
+
+**Opportunity Evidence Confidence**：
+对一次 Opportunity Assessment 的证据充分性、独立性、时效性、来源可靠性、实体或资产匹配以及冲突处理程度的版本化评估；它与 Priority Score 分离，不能直接解释为统计概率。
+_Avoid_: LLM 自报置信度、Priority Score、主观 high/medium/low
+
+**Review Flag**：
+Opportunity Assessment 或 SEO Opportunity 上一项需要解释、复核、限制动作或阻断推进的结构化条件；它使用稳定 code、类别、严重级别、人类可读标题与解释、证据引用、动作影响和解除条件，而不是自由文本标签。
+_Avoid_: Risk 扣分项、模糊 warning、无解释的字符串标签
 
 **发布记录（Publication Record）**：
 外部 CMS 中已交付或已发布内容的身份、URL、市场、版本、状态和时间记录，用于连接内容资产与后续表现；它不表示本项目负责执行发布。
