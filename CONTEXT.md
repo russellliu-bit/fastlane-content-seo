@@ -65,12 +65,16 @@ _Avoid_: 固定来源清单、最低来源数、缺失数据统一扣分
 _Avoid_: Topic Candidate、自动选题、内容 Idea、被拒绝的 Opportunity
 
 **Opportunity Priority Score**：
-对已经通过准入的 SEO Opportunity 进行 backlog 排序的版本化多维分数；它表达相对投入优先级，不表达判断为真的概率，也不能用高价值抵消阻断性风险。
+对已经通过准入的 SEO Opportunity 按价值、时效与战略意义进行相对排序的版本化多维分数；它不表达判断为真的概率，也不包含执行成本，不能用高价值抵消阻断性风险。
 _Avoid_: Opportunity Confidence、成功概率、统一 Signal 强度分
 
 **Opportunity Evidence Confidence**：
 对一次 Opportunity Assessment 的证据充分性、独立性、时效性、来源可靠性、实体或资产匹配以及冲突处理程度的版本化评估；它与 Priority Score 分离，不能直接解释为统计概率。
 _Avoid_: LLM 自报置信度、Priority Score、主观 high/medium/low
+
+**Opportunity Execution Effort**：
+对一个 SEO Opportunity 从内容准备到审核交接所需工作量、时间、审核层级和专门能力的独立估计；它参与排期和产能选择，但不改变 Opportunity 的价值或 Evidence Confidence。
+_Avoid_: Priority 扣分、低价值、实现难度分
 
 **Review Flag**：
 Opportunity Assessment 或 SEO Opportunity 上一项需要解释、复核、限制动作或阻断推进的结构化条件；它使用稳定 code、类别、严重级别、人类可读标题与解释、证据引用、动作影响和解除条件，而不是自由文本标签。

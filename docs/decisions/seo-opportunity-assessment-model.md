@@ -113,7 +113,63 @@ Opportunity 判断分为两个阶段：
 
 这些权重和 `80/60/40` 阈值是可检验的 MVP 初始假设。后续通过 Heyup 与 REDMAGIC 的真实、只读双切片样本和人工终审标签检查分档的单调性、误判类型和阈值，不把 80 分解释成“80% 正确率”。
 
-## 7. review-flags-v1
+## 7. priority-model-v1
+
+Priority Score 使用共享维度语义、运行模式初始权重和有证据的 `0–5` rubric。LLM 必须选择 rubric 中有定义的等级并引用证据，不能自由生成一个缺少计算过程的总分。
+
+### 共享维度
+
+| 维度 | 回答的问题 |
+| --- | --- |
+| Audience Demand | 是否存在真实搜索、讨论或用户需求 |
+| Momentum & Timing | 需求是在上升、稳定还是衰退，时间窗口是否紧迫 |
+| Strategic Fit | 是否符合项目使命、频道定位、品牌边界和当前重点 |
+| Organic Upside | 是否存在搜索覆盖缺口、排名推进空间、CTR 或内容衰退机会 |
+| Expected Outcome Value | 成功后对受众、媒体影响或业务结果的潜在价值 |
+| Content Leverage | 能否利用已有资产、内链、实体资料和已有权重，以较小内容动作获得收益 |
+
+维度语义由共同底座定义；Heyup 媒体模式与 DTC 品牌模式使用不同的初始权重。
+
+### Heyup 媒体模式初始权重
+
+| 维度 | 权重 |
+| --- | ---: |
+| Audience Demand | 15 |
+| Momentum & Timing | 25 |
+| Strategic / Editorial Fit | 20 |
+| Organic Upside | 15 |
+| Expected Audience / Media Value | 15 |
+| Content Leverage | 10 |
+
+Heyup 提高 Momentum & Timing 权重，以适应媒体内容的时效窗口；Editorial Fit 防止系统只追逐与 Heyup 无关的高热度。
+
+### DTC 品牌模式初始权重
+
+| 维度 | 权重 |
+| --- | ---: |
+| Audience Demand | 20 |
+| Momentum & Timing | 15 |
+| Strategic / Brand Fit | 20 |
+| Organic Upside | 15 |
+| Expected Business Value | 20 |
+| Content Leverage | 10 |
+
+DTC 提高稳定需求和业务价值权重，以支持新品、活动、购买决策与第一方 VOC，而不是完全跟随热点。
+
+### 执行成本独立保存
+
+执行成本不进入 Priority 加权。Opportunity 另行保存：
+
+- `effort_level`：`xs / s / m / l / xl`；
+- estimated lead time；
+- required review tier；
+- required capabilities。
+
+排期可以同时比较 Priority 和 Effort，但不能让高成本被误写成低价值，也不能让低成本自动变成高价值。
+
+共享维度、rubric、权重、输入和模型版本都必须留存。品牌 SEO Profile 可以提供评分上下文，但不能任意发明新的 Priority 维度。以上权重是 `priority-model-v1` 初始假设，留待双切片样本校准。
+
+## 8. review-flags-v1
 
 ### Code 规范
 
@@ -181,7 +237,6 @@ Opportunity 判断分为两个阶段：
 
 ## 尚未决定
 
-- Priority Score 的正式维度、权重和运行模式差异。
 - 推荐行动的完整集合、互斥关系与选择规则。
 - Heyup 与 DTC Brand SEO Profile 能覆盖哪些权重、阈值和审核策略。
 - Opportunity Assessment、LLM 初审与人工终审的状态流转。
