@@ -12,6 +12,10 @@ _Avoid_: 每品牌一套模式、工作流模板
 描述单个 DTC 品牌的市场、受众、定位、内容边界、竞争环境和业务约束的上下文资产；它约束 DTC 品牌模式，但不改变该模式的决策逻辑。
 _Avoid_: 品牌运行模式、品牌配置文件
 
+**Strategic Directive**：
+由明确责任人批准、具有生效与失效时间的项目业务重点；它作为 Strategic Fit、Momentum 或 Expected Outcome Value 的可追溯评分输入，不直接修改总分或绕过共同准入与审核规则。
+_Avoid_: 人工加分、临时权重、隐藏优先级
+
 **Marketing Listening 系统（Marketing Listening System）**：
 独立于 SEO 项目的共享上游能力，持续采集并标准化社交媒体、论坛、新闻、VOC 和其他市场信号，供 SEO 及其他营销场景消费。
 _Avoid_: SEO 监听模块、SEO 爬虫

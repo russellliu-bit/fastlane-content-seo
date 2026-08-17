@@ -287,8 +287,53 @@ DTC 提高稳定需求和业务价值权重，以支持新品、活动、购买�
 - `retire`、`consolidate`、`redirect_recommendation` 始终需要人工审批。
 - 所有动作只是建议与内容交付计划，不执行 Shopify、CMS、redirect 或站点写入。
 
+## 10. 共同底座、Operating Mode 与 Brand SEO Profile
+
+### 共同底座固定
+
+以下语义不能由单个项目或品牌覆盖：
+
+- Signal Cluster、Opportunity Assessment、SEO Opportunity 的关系；
+- Assessment 结果和缺失数据状态；
+- Priority 与 Evidence Confidence 的维度语义；
+- Confidence 非补偿原则；
+- Review Flag code、category 和 severity 规范；
+- Recommended Action Plan 的主动作与辅助操作语言；
+- 评分、判断和规则版本必须可追溯。
+
+### SEO Operating Mode 选择默认策略
+
+媒体模式与 DTC 模式可以分别配置：
+
+- Priority 默认权重；
+- Opportunity Evidence Recipe；
+- Content Type freshness 与分析窗口；
+- Momentum、Strategic Fit、Expected Outcome Value 的具体 rubric；
+- 动作默认审核级别；
+- 内容节奏、复评时机和成功结果解释。
+
+### Brand SEO Profile 提供上下文
+
+Brand SEO Profile 可以提供市场、语言、受众、定位、内容边界、产品与竞品实体、频道或内容类型、业务事件、数据连接、outcome 定义和资产治理权限。它们作为共同 rubric 的输入，不形成隐藏的品牌专属算法。
+
+第一版不允许 Brand SEO Profile：
+
+- 新增或删除 Priority / Confidence 维度；
+- 自定义 Confidence 分档；
+- 把 blocker 改成普通扣分；
+- 改变 Action code 的含义；
+- 隐式覆盖总分公式；
+- 让高分绕过人类审核要求。
+
+真实样本若证明需要不同算法，应创建显式、可审查的 scoring policy version，而不是通过 Profile 隐式改变结果。
+
+### Strategic Directive
+
+品牌或项目可以保存有期限的 Strategic Directive，作为评分输入表达新品、活动或阶段性业务重点。它至少包含主题或实体、生效与失效时间、影响的 rubric、业务理由和批准人。
+
+Strategic Directive 影响 Strategic Fit、Momentum 或 Expected Outcome Value 的证据判断，但不直接给总分加固定分数，也不能绕过准入、Review Flag 或审核规则。
+
 ## 尚未决定
 
-- Heyup 与 DTC Brand SEO Profile 能覆盖哪些权重、阈值和审核策略。
 - Opportunity Assessment、LLM 初审与人工终审的状态流转。
 - 双切片样本校准后的 Confidence 权重与阈值修订。
