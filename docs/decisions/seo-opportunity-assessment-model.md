@@ -1,6 +1,6 @@
 # SEO Opportunity Assessment 决策模型
 
-- 状态：讨论中；本文只记录已确认决策
+- 状态：已确认
 - 首次确认：2026-08-15
 - 最近更新：2026-08-17
 - Wayfinder 节点：[定义 SEO Opportunity 准入、动作与评分维度](https://github.com/russellliu-bit/fastlane-content-seo/issues/8)
@@ -333,7 +333,54 @@ Brand SEO Profile 可以提供市场、语言、受众、定位、内容边界�
 
 Strategic Directive 影响 Strategic Fit、Momentum 或 Expected Outcome Value 的证据判断，但不直接给总分加固定分数，也不能绕过准入、Review Flag 或审核规则。
 
-## 尚未决定
+## 11. Assessment 与 Opportunity 审核状态
 
-- Opportunity Assessment、LLM 初审与人工终审的状态流转。
-- 双切片样本校准后的 Confidence 权重与阈值修订。
+### Opportunity Assessment
+
+```text
+draft
+  → evaluating
+      ├─ admitted
+      ├─ rejected
+      └─ insufficient_evidence
+```
+
+- `admitted`：通过准入并生成正式 SEO Opportunity。
+- `rejected`：候选可以判断但不成立，例如超出边界或属于误识别。
+- `insufficient_evidence`：当前无法可靠判断，补充数据后可以重新评估。
+- 重新评估创建新 Assessment version；旧版本标记 `superseded`，不覆盖当时的证据、规则和结果。
+
+### LLM Preliminary Review
+
+正式 SEO Opportunity 以 `proposed` 状态进入独立 LLM 初审。LLM 重新读取原始证据包、支持/反向/背景证据、Evidence Recipe、站内覆盖和 Action Plan，只能输出：
+
+- `recommend_approve`；
+- `recommend_decline`；
+- `escalate`。
+
+LLM reviewer 必须使用独立 prompt 和调用；可以复用同一基础模型，但不能复用生成 Opportunity 的隐藏上下文完成自我认证。模型、prompt、证据输入、建议与理由都要版本化保存。
+
+### Human Opportunity Review
+
+明确 SEO 责任人对 Opportunity 与 Action Plan 作出：
+
+- `approved`：接受当前 Opportunity 和 Action Plan；
+- `declined`：证据可以判断，但负责人不接受该机会或行动；
+- `needs_evidence`：当前证据不足，返回新的 Assessment，而不是作为正式拒绝。
+
+人工决定保存 reviewer、时间和理由。LLM 建议不能覆盖人工结论。
+
+### 分数不拥有批准权
+
+Priority、Evidence Confidence 和 LLM 初审都不能单独自动批准 Opportunity。高分不能绕过 Review Flag、品牌治理或人工终审。
+
+Heyup-first 仍可以高度自动化信号收集、Assessment、评分、Action Plan、evidence package、Brief/草稿/SEO 字段预生成和 LLM 初审；人工终审前的内容只能是内部候选，`approved` 前不能形成正式 CMS Handoff。本项目始终不执行 CMS 发布。
+
+## 留给双切片校准
+
+- 六个 Priority 维度的 `0–5` rubric 锚点与实际数据映射。
+- `priority-model-v1` 权重产生的真实排序质量。
+- `confidence-model-v1` 权重与 `80/60/40` 阈值的区分度。
+- LLM 与人工判断的一致率及常见 false positive / false negative。
+- Heyup 与 REDMAGIC 是否需要不同阈值或新的显式 scoring policy version。
+- 哪些审核步骤在真实验证后有资格提高自动化程度。

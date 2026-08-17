@@ -97,5 +97,9 @@ _Avoid_: 发布任务、Shopify 写入结果
 _Avoid_: 固定评分窗口、试点品牌配置
 
 **LLM 初审（LLM Preliminary Review）**：
-在确定性规则校验之后、人工终审之前进行的独立模型审核；它读取原始证据包并给出建议结论与理由，但没有最终裁决权。
+在确定性规则校验之后、人工终审之前进行的独立模型审核；它读取原始证据包并给出 `recommend_approve`、`recommend_decline` 或 `escalate` 及其理由，但没有最终裁决权。
 _Avoid_: 自动批准、LLM 终审、自我认证
+
+**人工 Opportunity 终审（Human Opportunity Review）**：
+由明确 SEO 责任人对正式 SEO Opportunity 与 Recommended Action Plan 作出的最终治理决定；结果为 `approved`、`declined` 或 `needs_evidence`，并保留责任人、理由和时间。
+_Avoid_: LLM 决定、自动批准、CMS 发布审批
