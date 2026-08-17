@@ -235,9 +235,60 @@ DTC 提高稳定需求和业务价值权重，以支持新品、活动、购买�
 
 每个 Flag 必须让机器能够稳定判断 code、严重级别、阻断阶段和状态，也必须让人能够读懂发生了什么、为何触发、影响什么以及如何解除。
 
+## 9. Recommended Action Plan
+
+每个正式 SEO Opportunity 使用“一个主动作 + 零个或多个辅助操作”。主动作表达核心内容策略，辅助操作表达实现组成，避免多个平级动作无法确定决策中心。
+
+### 主动作
+
+| Code | 定义 |
+| --- | --- |
+| `create` | 没有合适承接资产，建议建立新的 Content Asset |
+| `update` | 修正或刷新已有资产，但不显著改变其主要搜索意图与覆盖范围 |
+| `expand` | 在已有资产上新增重要子主题、query family 或内容模块，扩大覆盖范围 |
+| `consolidate` | 两个或更多资产意图高度重叠，建议选定 survivor 并整合其他资产 |
+| `reposition` | 改变已有资产的主要搜索意图、受众、频道角色或内容定位 |
+| `link` | 内容本身基本合适，主要机会是建立或优化内部链接 |
+| `monitor` | 机会成立，但目前不应实施内容变更，等待时机或更多证据 |
+| `retire` | 资产继续存在的价值低于重复、过期、风险或维护成本，建议退出活跃内容组合 |
+
+`reject` 是 Opportunity Assessment 结果，不是主动作。
+
+### 动作边界
+
+- `update` 保持主要搜索意图与覆盖范围，处理事实、时效、失效引用、metadata 等刷新。
+- `expand` 保持主要意图，但增加重要 query family、子主题或内容模块。
+- `reposition` 改变主要受众、搜索意图、频道角色或内容定位。
+- `consolidate` 是内容策略；redirect 是可能伴随它的实施建议，不是主动作。
+- `link` 只在内部链接是主要干预时作为主动作；伴随其他内容动作时使用辅助操作。
+
+### 辅助操作初始集合
+
+- `metadata_optimize`
+- `content_refresh`
+- `add_section`
+- `internal_link_add`
+- `internal_link_remove`
+- `merge_content`
+- `redirect_recommendation`
+- `canonical_review`
+- `schema_markup_recommendation`
+- `fact_verification`
+- `localization`
+
+辅助操作也必须使用稳定 code，并保存解释、目标资产与完成条件。
+
+### 资产和治理约束
+
+- `create` 必须证明没有合适承接资产。
+- `update`、`expand`、`reposition`、`link`、`retire` 必须指向明确 Content Asset 与当前 Revision。
+- `consolidate` 必须指定一个 survivor 和至少一个 donor。
+- `monitor` 必须记录复评日期或可检测的复评触发条件。
+- `retire`、`consolidate`、`redirect_recommendation` 始终需要人工审批。
+- 所有动作只是建议与内容交付计划，不执行 Shopify、CMS、redirect 或站点写入。
+
 ## 尚未决定
 
-- 推荐行动的完整集合、互斥关系与选择规则。
 - Heyup 与 DTC Brand SEO Profile 能覆盖哪些权重、阈值和审核策略。
 - Opportunity Assessment、LLM 初审与人工终审的状态流转。
 - 双切片样本校准后的 Confidence 权重与阈值修订。

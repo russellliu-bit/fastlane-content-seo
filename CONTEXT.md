@@ -76,6 +76,10 @@ _Avoid_: LLM 自报置信度、Priority Score、主观 high/medium/low
 对一个 SEO Opportunity 从内容准备到审核交接所需工作量、时间、审核层级和专门能力的独立估计；它参与排期和产能选择，但不改变 Opportunity 的价值或 Evidence Confidence。
 _Avoid_: Priority 扣分、低价值、实现难度分
 
+**Recommended Action Plan**：
+一个 SEO Opportunity 的结构化行动建议，由且仅由一个表达核心策略的主动作和零个或多个表达实施组成的辅助操作构成；它是可审核的建议，不授权 CMS 或站点写入。
+_Avoid_: 多个平级动作、发布任务、Reject 动作
+
 **Review Flag**：
 Opportunity Assessment 或 SEO Opportunity 上一项需要解释、复核、限制动作或阻断推进的结构化条件；它使用稳定 code、类别、严重级别、人类可读标题与解释、证据引用、动作影响和解除条件，而不是自由文本标签。
 _Avoid_: Risk 扣分项、模糊 warning、无解释的字符串标签
